@@ -7,7 +7,7 @@ namespace RPS123
     {
         public static void ShowTable(string[] moves, Logic gameLogic)
         {
-            var ruleTable = new ConsoleTable(new string[] { "PC\\USER" });
+            var ruleTable = new ConsoleTable(new string[] { "computer\\client" });
             ruleTable.AddColumn(moves);
             for (int i = 0; i < moves.Length; i++)
             {
