@@ -14,12 +14,12 @@ namespace RPS123
             HMACKey keyGenerator1 = new HMACKey();
             keyGenerator1.GenerateKey();
 
-            var (computerMoveIndex, computerMoveString) = gameLogic.GenerateComputerMove();
+            var (computerMoveIndex, computerMoveString) = gameLogic.Generate_Computer();
             var hash = keyGenerator1.GenerateHMAC(computerMoveString);
             Console.WriteLine($"HMAC: {BitConverter.ToString(hash).Replace("-", "")}");
 
             Console.WriteLine("Available moves: ");
-            gameLogic.ShowAvailableMoves();
+            gameLogic.Show_Available_Moves();
 
             do
             {
@@ -36,7 +36,7 @@ namespace RPS123
                     {
                         Console.WriteLine($"Your move: {argv[userChoice - 1]}");
                         var winer = gameLogic.DefineWinner(userChoice - 1, computerMoveIndex);
-                        Console.WriteLine(gameLogic.GetGameResultMessage(winer));
+                        Console.WriteLine(gameLogic.Get_Result_Message(winer));
                         Console.WriteLine($"HMAC key: {BitConverter.ToString(keyGenerator1.Key).Replace("-", "")}");
                         break;
                     }

@@ -8,13 +8,13 @@ namespace RPS123
 {
     class Logic
     {
-        private readonly List<string> possibleMoves;
+        private readonly List<string> Moves;
 
-        private int computerMoveindex;
+        private int computerMoveID;
 
         public Logic(string[] moves)
         {
-            possibleMoves = new List<string>(moves);
+            Moves = new List<string>(moves);
         }
 
         public Win DefineWinner(int userMoveIndex, int computerMoveIndex)
@@ -23,42 +23,42 @@ namespace RPS123
             int rightDistance = 0, leftDistance = 0;
             for (int i = userMoveIndex; ; i++)
             {
-                if (i == possibleMoves.Count) i = 0;
-                if (possibleMoves[i] == possibleMoves[computerMoveIndex]) break;
+                if (i == Moves.Count) i = 0;
+                if (Moves[i] == Moves[computerMoveIndex]) break;
                 rightDistance++;
             }
 
             for (int i = userMoveIndex; ; i--)
             {
-                if (i == -1) i = possibleMoves.Count - 1;
-                if (possibleMoves[i] == possibleMoves[computerMoveIndex]) break;
+                if (i == -1) i = Moves.Count - 1;
+                if (Moves[i] == Moves[computerMoveIndex]) break;
                 leftDistance++;
             }
 
             return leftDistance < rightDistance ? Win.User : Win.Computer;
         }
 
-        public (int, string) GenerateComputerMove()
+        public (int, string) Generate_Computer()
         {
             var rnd = new Random();
-            computerMoveindex = rnd.Next(possibleMoves.Count);
-            return (computerMoveindex, possibleMoves[computerMoveindex]);
+            computerMoveID = rnd.Next(Moves.Count);
+            return (computerMoveID, Moves[computerMoveID]);
         }
 
-        public void ShowAvailableMoves()
+        public void Show_Available_Moves()
         {
             int i = 0;
-            for (; i < possibleMoves.Count; i++)
+            for (; i < Moves.Count; i++)
             {
-                Console.WriteLine(i + 1 + $" - {possibleMoves[i]}");
+                Console.WriteLine(i + 1 + $" - {Moves[i]}");
             }
             Console.WriteLine("0 - Exit\n? - Help");
         }
 
-        public string GetGameResultMessage(Win winner)
+        public string Get_Result_Message(Win winner)
         {
             var resultMessage = new StringBuilder();
-            resultMessage.AppendLine($"Computer move: {possibleMoves[computerMoveindex]}");
+            resultMessage.AppendLine($"Computer move: {Moves[computerMoveID]}");
             switch (winner)
             {
                 case Win.User:
