@@ -1,0 +1,15 @@
+D:\Univ3\ITran\Task-3\RPS123\RPS123\obj\Debug\netcoreapp3.1\RPS123.csprojAssemblyReference.cache
+D:\Univ3\ITran\Task-3\RPS123\RPS123\obj\Debug\netcoreapp3.1\RPS123.AssemblyInfoInputs.cache
+D:\Univ3\ITran\Task-3\RPS123\RPS123\obj\Debug\netcoreapp3.1\RPS123.AssemblyInfo.cs
+D:\Univ3\ITran\Task-3\RPS123\RPS123\obj\Debug\netcoreapp3.1\RPS123.csproj.CoreCompileInputs.cache
+D:\Univ3\ITran\Task-3\RPS123\RPS123\bin\Debug\netcoreapp3.1\RPS123.exe
+D:\Univ3\ITran\Task-3\RPS123\RPS123\bin\Debug\netcoreapp3.1\RPS123.deps.json
+D:\Univ3\ITran\Task-3\RPS123\RPS123\bin\Debug\netcoreapp3.1\RPS123.runtimeconfig.json
+D:\Univ3\ITran\Task-3\RPS123\RPS123\bin\Debug\netcoreapp3.1\RPS123.runtimeconfig.dev.json
+D:\Univ3\ITran\Task-3\RPS123\RPS123\bin\Debug\netcoreapp3.1\RPS123.dll
+D:\Univ3\ITran\Task-3\RPS123\RPS123\bin\Debug\netcoreapp3.1\RPS123.pdb
+D:\Univ3\ITran\Task-3\RPS123\RPS123\bin\Debug\netcoreapp3.1\ConsoleTables.dll
+D:\Univ3\ITran\Task-3\RPS123\RPS123\obj\Debug\netcoreapp3.1\RPS123.csproj.CopyComplete
+D:\Univ3\ITran\Task-3\RPS123\RPS123\obj\Debug\netcoreapp3.1\RPS123.dll
+D:\Univ3\ITran\Task-3\RPS123\RPS123\obj\Debug\netcoreapp3.1\RPS123.pdb
+D:\Univ3\ITran\Task-3\RPS123\RPS123\obj\Debug\netcoreapp3.1\RPS123.genruntimeconfig.cache

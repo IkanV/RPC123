@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RPS123": {
+      "commandName": "Project",
+      "commandLineArgs": "\"rock\", \"paper\", \"scissor\", \"lizard\", \"spoke\", \"1\", \"2\""
+    }
+  }
+}
